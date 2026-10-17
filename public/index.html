@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="A class-project demo that displays fictional examples of community assistance resources."
+    >
+    <title>Local Help Finder — Sample Project</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Local Help Finder home">
+        <span class="brand-mark" aria-hidden="true">LH</span>
+        <span>Local Help Finder</span>
+      </a>
+      <span class="project-label">CLASS PROJECT DEMO</span>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">A starting point for finding support</p>
+        <h1 id="page-title">Help, organized around what you need.</h1>
+        <p class="intro-copy">
+          Choose a topic to see how a local resource finder could organize useful information.
+        </p>
+      </section>
+
+      <aside class="sample-notice" aria-label="Important sample information">
+        <span class="notice-icon" aria-hidden="true">i</span>
+        <p>
+          <strong>Sample information only.</strong>
+          Every resource on this page is fictional. These examples are not real organizations
+          and cannot provide assistance.
+        </p>
+      </aside>
+
+      <section class="finder" aria-labelledby="finder-title">
+        <div class="finder-heading">
+          <div>
+            <p class="eyebrow">Browse sample resources</p>
+            <h2 id="finder-title">What kind of help are you looking for?</h2>
+          </div>
+          <span class="step-number" aria-hidden="true">01</span>
+        </div>
+
+        <form id="category-form">
+          <label for="category-select">Assistance category</label>
+          <div class="form-row">
+            <select id="category-select" name="category" required>
+              <option value="">Loading categories…</option>
+            </select>
+            <button type="submit">Show sample resources</button>
+          </div>
+        </form>
+
+        <section class="results" aria-labelledby="results-title" aria-live="polite">
+          <div class="results-heading">
+            <div>
+              <p class="eyebrow">Your results</p>
+              <h2 id="results-title">Sample resources</h2>
+            </div>
+            <span id="result-count" class="result-count"></span>
+          </div>
+          <p id="status-message" class="status-message">
+            Select a category above to get started.
+          </p>
+          <div id="resource-list" class="resource-list"></div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Local Help Finder</span>
+      <span>Educational demo · All listings are fictional examples</span>
+    </footer>
+  </body>
+</html>
